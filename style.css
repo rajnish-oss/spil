@@ -16,9 +16,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 101px;
     max-width: 1200px;
     margin: auto;
+
 }
 
 /* Header */
