@@ -1,4 +1,4 @@
-/* Reset */
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +9,12 @@ body {
     line-height: 1.6;
 }
 
+/* Container */
 .container {
     font-family: sans-serif;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     max-width: 1200px;
@@ -21,59 +22,59 @@ body {
 }
 
 /* Header */
-.top{
-    height:123px;
-    background-image:url("img/banner.jpg");
+.top {
+    height: 123px;
+    background-image: url("img/banner.jpg");
     background-size: contain;
     color: #fff;
     padding: 10px 0;
 }
 
-.bottom{
+.bottom {
     display: grid;
-  gap: 1rem 2rem;
-  max-width: 25rem;
+    gap: 1rem 2rem;
+    max-width: 25rem;
 }
 
-#bars{
+#bars {
     position: absolute;
     right: 23px;
     font-size: 27px;
 }
 
-.sidebar{
+.sidebar {
     width: 20rem;
-    height: 100rem;
-    display:none;
-    background-image:url("img/black.jpeg"); 
+    height: 100%;
+    display: none;
+    background-image: url("img/black.jpeg");
     backface-visibility: 0.5;
-    justify-content:flex-start ;
+    justify-content: flex-start;
     list-style-type: none;
     z-index: 2;
     position: absolute;
-    top: 0px;
+    top: 0;
     color: white;
-    right:0;
+    right: 0;
 }
 
-.xcross{
+.xcross {
     position: absolute;
     right: 17px;
-    top:10px;
+    top: 10px;
 }
 
-ul{
-    padding:36px;
+ul {
+    padding: 36px;
 }
 
-ul li{
+ul li {
     list-style-type: none;
     padding: 18px;
 }
 
-ul li:hover{
+ul li:hover {
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .logo {
@@ -83,66 +84,60 @@ ul li:hover{
     font-family: serif;
 }
 
-.carousel-item{
-background-size: cover;
+/* Carousel */
+.carousel-item {
+    background-size: cover;
 }
 
-.carouselExampleIndicators{
+.carouselExampleIndicators {
     height: 100px;
-    width:30rem;
+    width: 30rem;
 }
 
-.w-100{
+.w-100 {
     width: 100% !important;
     height: 304px;
 }
 
-/*products*/
-.main{
+/* Products */
+.main {
     width: 82vw;
     height: auto;
     margin: 0 auto;
     max-width: 1170px;
-    display: block
+    display: block;
 }
 
-/**.imgprod{
-    height: 50px;
-    width: 50px;
-    background-image: url("img/download.jpg");
-    background-size:cover;
-}**/
-
-.barcontent{
+.barcontent {
     visibility: hidden;
 }
 
-.pro-heading{
+.pro-heading {
     height: 6rem;
-    width:100%;
+    width: 100%;
     position: relative;
     text-align: center;
     margin: 23px 0 69px 0;
 }
 
-.pro{
-display:block;
+.pro {
+    display: block;
 }
 
-.underline{
+.underline {
     height: 3px;
     width: 110px;
     background-color: black;
-    position:relative;
-    margin:0px auto;
+    position: relative;
+    margin: 0px auto;
 }
-.products{
+
+.products {
     max-height: 19rem;
     margin-top: 50px;
     display: grid;
-    max-width: 25rem
+    max-width: 25rem;
 }
-
 
 /* Contact Section */
 #contact {
@@ -184,7 +179,7 @@ display:block;
 
 /* Footer */
 footer {
-    background-image:url("img/banner.jpg");
+    background-image: url("img/banner.jpg");
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -192,67 +187,156 @@ footer {
     height: auto;
 }
 
-.bot-head{
+.bot-head {
     height: 40px;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contacts{
+.contacts {
     display: flex;
     justify-content: center;
 }
 
-.contacts1{
-    height:100px;
-    width:400px;
-    color:white;
+.contacts1,
+.contacts2 {
+    height: 100px;
+    width: 400px;
+    color: white;
     display: block;
     cursor: pointer;
 }
 
-.contacts2{
-    height:100px;
-    width:400px;
-    color:white;
-    display: block;
-    right:20px;
-    cursor: pointer;
+.contacts2 {
+    right: 20px;
 }
 
-.address{
+.address {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#address{
-    display:inline-block;
+#address {
+    display: inline-block;
 }
 
-#location{
-    padding:10px;
+#location {
+    padding: 10px;
 }
 
-.mob{
-    display:block;
+.mob {
+    display: block;
 }
-#call{
+
+#call {
     position: relative;
     top: -13px;
     padding: 8px;
 }
 
-.whatsapp{
+.whatsapp {
     height: 66px;
     width: 211px;
-    border:none;
-    border-radius:15px;
-    background-image: url("img/1671216852277.png"); 
-    right:0px;
-    bottom:160px;
+    border: none;
+    border-radius: 15px;
+    background-image: url("img/1671216852277.png");
+    right: 0;
+    bottom: 160px;
     position: fixed;
-    background-size:cover;
+    background-size: cover;
+}
+
+/* Responsive adjustments for mobile and PC */
+@media (max-width: 768px) {
+    /* Adjust container for smaller screens */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Header */
+    .top {
+        height: 100px;
+        background-size: cover;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    #bars {
+        font-size: 24px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .carouselExampleIndicators {
+        height: 80px;
+        width: 100%;
+    }
+
+    /* Products */
+    .main {
+        width: 100%;
+    }
+
+    .products {
+        max-width: 100%;
+    }
+
+    .pro-heading {
+        margin: 15px 0;
+    }
+
+    /* Contact Section */
+    #contact form {
+        width: 90%;
+    }
+
+    /* Footer */
+    .contacts1,
+    .contacts2 {
+        width: 100%;
+    }
+
+    .whatsapp {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    /* PC adjustments */
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    #bars {
+        font-size: 27px;
+    }
+
+    .carouselExampleIndicators {
+        height: 100px;
+        width: 30rem;
+    }
+
+    .products {
+        max-width: 25rem;
+    }
 }
