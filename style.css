@@ -293,9 +293,6 @@ footer {
         width:100%;
     }
 
-    #logo {
-        font-size: 10px;
-    }
 
     #bars {
         font-size: 24px;
@@ -382,7 +379,7 @@ footer {
     }
 
     #logo {
-        font-size: 26px;
+        font-size: 23px;
         left: 3rem;
     }
 
