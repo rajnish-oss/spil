@@ -114,7 +114,7 @@ background-size: cover;
 /*products*/
 .main{
     width: 82vw;
-    height: 20vh;
+    height: 80vh;
     
     margin: 0 auto;
     max-width: 1170px;
@@ -127,6 +127,11 @@ background-size: cover;
     background-image: url("img/download.jpg");
     background-size:cover;
 }**/
+#logo{
+    font-size:38px;
+    position: relative;
+    left:34rem;
+}
 
 .barcontent{
     visibility: hidden;
@@ -152,7 +157,7 @@ display:block;
     margin:0px auto;
 }
 .products{
-    height: 19vh;
+    height: 32vh;
     margin-top: 50px;
     display: grid;
     max-width: 25rem
@@ -288,8 +293,8 @@ footer {
         width:100%;
     }
 
-    .logo {
-        font-size: 1.6rem;
+    #logo {
+        font-size: 10px;
     }
 
     #bars {
@@ -318,10 +323,11 @@ footer {
     .main {
         width: 100%;
         left:10px;
+        height: 31vh;
     }
 
     .products {
-        max-width: 20rem;
+        max-width: 22rem;
         height: 200px;
         left:20px;
         position: relative;
@@ -376,9 +382,8 @@ footer {
     }
 
     #logo {
-        font-size: 45px;
-        position: relative;
-        left: 6rem;
+        font-size: 26px;
+        left: 3rem;
     }
 
     #bars {
