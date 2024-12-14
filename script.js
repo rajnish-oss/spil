@@ -27,7 +27,7 @@ const menu = [
     category: "breakfast",
     price: 20.99,
     img: "img/download.jpg",
-    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `    },
+    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `   },
   
 ];
 
