@@ -5,7 +5,7 @@ const menu = [
     title: "buttermilk pancakes",
     category: "breakfast",
     price: 15.99,
-    img: "img/download.jpg",
+    img: "img/banner.jpg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,    },
   {
     id: 2,
@@ -62,7 +62,7 @@ function displayMenuItem (menu) {
   let displayMenu =  menu.map(function (item){
       return `<article class="products">
       <div class="imgprod">
-          <img src=${item.img}/> </div> 
+          <img src=${item.img} alt="src hai"/> </div> 
           <div class="info">
           <header>
           <h3>${item.title}</h3>
